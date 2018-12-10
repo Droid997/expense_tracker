@@ -18,6 +18,6 @@ https://www.apachefriends.org/download.html
 
 =>to run the application hit the below URL
 
-http://localhost/workspace/Expense_Tracker/
+http://localhost/Expense_Tracker/
 
 =>Make sure you have good internet connection and First Run may take sometime.
