@@ -10,7 +10,7 @@ from there own java classes,I had no other option than to choose different frame
 
 https://www.apachefriends.org/download.html
 
-=>Extract the workspace file and place the workspace folder inside htdocs of xampp installed directory
+=>Extract the workspace file and place the Expense_Tracker folder inside htdocs of xampp installed directory
 
 =>ex: if xampp is installed in 'c' drive the path will be
 
