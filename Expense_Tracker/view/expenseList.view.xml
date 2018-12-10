@@ -1,0 +1,79 @@
+<mvc:View
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	height="100%"
+	controllerName="controllers.expenseList">
+
+	<Page
+		title="Page"
+		class="sapUiContentPadding" >
+		<customHeader>
+			<Toolbar>
+				<Button icon="sap-icon://nav-back" press="navBack" ariaLabelledBy="editButtonLabel"/>
+				<ToolbarSpacer/>
+				<Button icon="sap-icon://add" text="Add Expense" press="addExpense" ariaLabelledBy="editButtonLabel"/>
+				
+			</Toolbar>
+
+		</customHeader>
+		<content>
+			<Table  items="{expenseList>/result}" selectionChange="onTableItemPress" mode="SingleSelectMaster">
+				<headerToolbar>
+					<OverflowToolbar id="otbSubheader">
+						<Title text="Clients" level="H2" />
+						<ToolbarSpacer />
+					</OverflowToolbar>
+				</headerToolbar>
+				<columns>
+					
+					<Column>
+						<Text text="Title" />
+					</Column>
+					
+					<Column>
+						<Text text="Currency" />
+					</Column>
+					
+					<Column>
+						<Text text="Amount" />
+					</Column>
+					
+					<Column>
+						<Text text="Date and Time" />
+					</Column>
+					
+					<Column>
+						<Text text="Description" />
+					</Column>
+					
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<VBox>
+								<Text text="{expenseList>title}"/>
+							</VBox>
+							
+							<VBox>
+								<Text text="{expenseList>currency}"/>
+							</VBox>
+							
+							<VBox>
+								<Text text="{expenseList>amount}"/>
+							</VBox>
+							
+							<VBox>
+								<Text text="{expenseList>time}"/>
+							</VBox>
+							
+							<VBox>
+								<Text text="{expenseList>description}"/>
+							</VBox>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+		</Page>
+</mvc:View>

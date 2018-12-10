@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
+
+  <script src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js" 
+  id="sap-ui-bootstrap" 
+	data-sap-ui-libs="sap.m,sap.ui.commons, sap.ui.table, sap.ui.unified"
+	data-sap-ui-resourceroots='{"view": "./"}'
+		
+	data-sap-ui-xx-waitForTheme="true"  
+	data-sap-ui-theme="sap_belize"> 
+  </script>
+
+  <script>
+  jQuery.sap.registerModulePath("controllers","./controllers")
+    jQuery.sap.require("sap.ui.core.routing.Router");  
+	jQuery.sap.require("sap.m.routing.RouteMatchedHandler");  
+	
+    sap.ui.localResources("view");
+	  
+	var app = new sap.m.App("app",{initialPage:"idApp1"});  
+	var view = sap.ui.view({id:"idApp1", type:sap.ui.core.mvc.ViewType.XML, viewName:"view.clients"});	
+	var view2 = sap.ui.view({type:sap.ui.core.mvc.ViewType.XML, viewName:"view.expenseList"});
+
+	var clientsController=sap.ui.controller("controllers.clients");
+    clientsController.intiDB();
+	
+	app.addPage(view);
+    app.addPage(view2);
+	app.placeAt("content");  
+	
+	/*var oRouter = new sap.ui.core.routing.Router({  
+      addClient: {   
+           pattern: "addClient"},
+		   default: {   
+           pattern: ""},
+	 rDetail: {   
+	   pattern: "Details/{pageNum}",   
+		view: "detail.Details"
+	   }  
+   }, 
+   {  
+   viewPath: "Views",
+   clearTarget: false  
+   });  
+   var oRouteHandler = new sap.m.routing.RouteMatchedHandler(oRouter);  
+   oRouter.register("router");  
+   oRouter.initialize(); */
+   
+  </script>
+</head>
+
+<body class="sapUiBody" role="application">
+<center>
+  <div id="content"></div>
+  
+</center>
+</body>
+
+</html>

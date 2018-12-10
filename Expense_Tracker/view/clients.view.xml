@@ -1,0 +1,49 @@
+<mvc:View
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	height="100%"
+	controllerName="controllers.clients">
+
+	<Page
+		title="Page"
+		class="sapUiContentPadding" >
+		<customHeader>
+			<Toolbar>
+				<ToolbarSpacer/>
+				
+				<Title text="Expense Tracker" level="H2"/>
+				<ToolbarSpacer/>
+				
+				<Button icon="sap-icon://add" text="New Client" press="addClient" ariaLabelledBy="editButtonLabel"/>
+			</Toolbar>
+
+		</customHeader>
+		<content>
+			<Table  id="clientsTable" items="{clientsList>/result}" selectionChange="onTableItemPress" mode="SingleSelectMaster">
+				<headerToolbar>
+					<OverflowToolbar id="otbSubheader">
+						<Title text="Clients" level="H2" />
+						<ToolbarSpacer />
+					</OverflowToolbar>
+				</headerToolbar>
+				<columns>
+					
+					<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+						<Text text="Client Name" />
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<VBox>
+								<Text text="{clientsList>client_name}"/>
+							</VBox>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+		
+	</Page>
+</mvc:View>
