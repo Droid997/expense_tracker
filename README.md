@@ -1,10 +1,6 @@
 # expense_tracker
 *************************************** EXPENSE TRACKER ***********************************
 
-!important
-The play framework has some problem with its library dependencies for java Ebean ORM and MYSQL integration. 
-I did actually found it easy to develop in play framework, since after integration with MYSQL the play framework classes throwed errors 
-from there own java classes,I had no other option than to choose different framework. 
  
 =>To run the application you need to have xampp installed in your computer you can download it from the below link
 
