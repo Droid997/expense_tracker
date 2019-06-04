@@ -1,4 +1,4 @@
-# expense_tracker
+# Expense Tracker
 *************************************** EXPENSE TRACKER ***********************************
 
  
@@ -17,3 +17,8 @@ https://www.apachefriends.org/download.html
 http://localhost/Expense_Tracker/
 
 =>Make sure you have good internet connection and First Run may take sometime.
+
+
+# Screens
+
+![alt text](https://github.com/Droid997/expense_tracker/blob/master/Expense_Tracker/screens/clients_list.png)
