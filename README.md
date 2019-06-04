@@ -21,4 +21,14 @@ http://localhost/Expense_Tracker/
 
 # Screens
 
+## Client List
 ![alt text](https://github.com/Droid997/expense_tracker/blob/master/Expense_Tracker/screens/clients_list.png)
+
+## Add Client
+![alt text](https://github.com/Droid997/expense_tracker/blob/master/Expense_Tracker/screens/newClient.png)
+
+## Expense List
+![alt text](https://github.com/Droid997/expense_tracker/blob/master/Expense_Tracker/screens/expense_list.png)
+
+## Add Expense
+![alt text](https://github.com/Droid997/expense_tracker/blob/master/Expense_Tracker/screens/addExpense.png)
